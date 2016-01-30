@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+           id="com.paypal.mpl-ios"
+      version="2.0.1">
+      
+    <name>PayPal MPL for iOS</name>
+	<description>add PayPal MPL SDK (Mobile Payment Library, not new SDK) to cordova project, as dependency of other plugins</description>
+	<keywords>paypal,sdk</keywords>
+
+	<engines>
+	    <engine name="cordova" version=">=3.0" />
+	</engines>
+	
+<!-- ios -->
+<platform name="ios">    
+         
+         <header-file src="libs/PayPal.h" />
+         <header-file src="libs/PayPalAddress.h" />
+         <header-file src="libs/PayPalAdvancedPayment.h" />
+         <header-file src="libs/PayPalAmounts.h" />
+         <header-file src="libs/PayPalInvoiceData.h" />
+         <header-file src="libs/PayPalInvoiceItem.h" />
+         <header-file src="libs/PayPalPayment.h" />
+         <header-file src="libs/PayPalPreapprovalDetails.h" />
+         <header-file src="libs/PayPalReceiverAmounts.h" />
+         <header-file src="libs/PayPalReceiverPaymentDetails.h" />
+         <source-file src="libs/libPayPalMPL.a" framework="true" />
+
+ 	 <framework src="Security.framework" />
+ 	 <framework src="libxml2.dylib" />
+         <framework src="libz.1.2.5.dylib" />
+</platform>
+          
+</plugin>

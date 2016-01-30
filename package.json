@@ -1,0 +1,19 @@
+{
+    "version": "2.0.1",
+    "name": "com.paypal.mpl-ios",
+    "cordova_name": "PayPal MPL for iOS",
+    "description": "add PayPal MPL SDK (Mobile Payment Library, not new SDK) to cordova project, as dependency of other plugins",
+    "keywords": [
+        "paypal",
+        "sdk"
+    ],
+    "platforms": [
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0"
+        }
+    ]
+}
